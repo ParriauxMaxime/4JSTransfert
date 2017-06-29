@@ -1,0 +1,51 @@
+<!doctype html>
+
+<title>CodeMirror: 4GL mode</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../../doc/docs.css">
+
+<link rel="stylesheet" href="../../lib/codemirror.css">
+<link rel="stylesheet" href="../../theme/eclipse.css">
+<link rel="stylesheet" href="../../addon/hint/show-hint.css">
+<script src="../../lib/codemirror.js"></script>
+<script src="4gl.js"></script>
+<script src="../../addon/scroll/scrollpastend.js"></script>
+<script src="../../addon/hint/show-hint.js"></script>
+
+<article>
+<h2>4GL mode</h2>
+<form><textarea id="code" name="code">
+LET a="a"
+DEFINE#a
+--uuh
+LET
+{
+a
+}
+</textarea></form>
+    <script>
+      function getHint(cm,options) {
+        var word = cm.findWordAt(cm.getCursor());
+        return { list: ["huhu","haha","foo"], from:word.anchor, to:word.head };
+      }
+      function onChange(cm,o) {
+        console.log("o:"+JSON.stringify(o));
+      }
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,
+        indentUnit: 2,
+        scrollPastEnd: true,
+        theme: "eclipse",
+        mode: "text/x-4gl",
+        extraKeys:  {
+          "Ctrl-Space": function(cm) { 
+             cm.showHint({hint: getHint});
+          }
+        } 
+      });
+      editor.on("change",onChange);
+    </script>
+
+    <p><strong>MIME types defined:</strong> <code>text/x-4gl</code>.</p>
+
+</article>
