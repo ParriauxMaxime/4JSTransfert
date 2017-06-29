@@ -29,6 +29,7 @@ all: help war
 gar: $(NAME)
 	@cp MANIFEST bin/MANIFEST
 	@fglgar gar Configuration
+	mkdir -p dist
 	@mv $(GAR) dist/
 	${GREEN} echo "dist/Configuration.gar created"
 
@@ -48,6 +49,7 @@ start:
 
 $(NAME): $(MODULES) $(FORMS)
 	@fgllink -o $(NAME) $(MODULES)
+	mkdir -p bin
 	@mv *.42m bin
 	@cp src/*.42f bin
 
