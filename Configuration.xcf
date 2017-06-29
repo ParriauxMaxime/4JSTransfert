@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<APPLICATION Parent="defaultgwc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.4js.com/ns/gas/3.00/cfextwa.xsd">
-  <EXECUTION>
-    <PATH>/home/maxime/4JS/GST/Configuration/bin</PATH>
-    <MODULE>Configuration.42r</MODULE>
-    <WEB_COMPONENT_DIRECTORY>/home/maxime/4JS/GST/Configuration/webcomponents</WEB_COMPONENT_DIRECTORY>
-  </EXECUTION>
-</APPLICATION>
