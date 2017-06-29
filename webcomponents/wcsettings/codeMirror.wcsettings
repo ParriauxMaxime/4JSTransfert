@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- cm webcomponent -->
+<WebComponent>
+    <DynamicProperty
+        name="language"
+        type="TEXT"
+        label="language"
+        description="The language input type"
+        initialValue=""
+    />
+</WebComponent>
