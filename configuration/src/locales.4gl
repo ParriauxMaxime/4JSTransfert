@@ -1,4 +1,4 @@
-GLOBALS 'src/global.4gl'
+GLOBALS 'global.4gl'
 
 FUNCTION addLocale(rec httpRecord)
     DEFINE localeToAdd STRING;

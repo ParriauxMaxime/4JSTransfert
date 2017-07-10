@@ -1,7 +1,7 @@
 IMPORT com
 IMPORT util
 IMPORT os
-GLOBALS 'src/global.4gl'
+GLOBALS 'global.4gl'
 
 FUNCTION POSTTextRequest(url STRING, rec httpRecord)
     DEFINE  req com.HttpRequest,
@@ -13,7 +13,7 @@ FUNCTION POSTTextRequest(url STRING, rec httpRecord)
             TRY
                 CALL req.doTextRequest(util.JSON.stringify(rec));
                 LET res = req.getResponse()
-                IF res.getStatusCode() != 200 THEN
+                IF res.getStatusCode() != 200 AND res.getStatusCode() != 201 THEN
                     DISPLAY  "HTTP Error ("||res.getStatusCode()||") ";
                     LET doc = NULL;
                 ELSE
@@ -24,6 +24,28 @@ FUNCTION POSTTextRequest(url STRING, rec httpRecord)
                 RETURN NULL
             END TRY
             RETURN doc;
+END FUNCTION
+
+FUNCTION POSTValidationRequest(url STRING, rec httpRecord)
+    DEFINE  req com.HttpRequest,
+            res com.HttpResponse;
+    DEFINE tmp STRING;
+    
+        LET req = com.HttpRequest.Create(url);
+        CALL req.setMethod("POST");
+        TRY
+            CALL req.doTextRequest(util.JSON.stringify(rec));
+            LET res = req.getResponse()
+            IF res.getStatusCode() == 200 THEN
+                RETURN NULL
+            ELSE
+                LET tmp = res.getTextResponse();
+                DISPLAY tmp
+                RETURN tmp
+            END IF
+        CATCH
+            RETURN 'Connection Failed, check your network'
+        END TRY
 END FUNCTION
 
 FUNCTION POSTZipRequest(url STRING, filepath STRING)

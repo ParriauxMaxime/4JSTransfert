@@ -31,15 +31,14 @@ GLOBALS
         importFiles                         STRING,
         custom_header                       BOOLEAN,
         custom_header_html                  STRING,
-        custom_header_css                   STRING,
         custom_footer                       BOOLEAN,
         custom_footer_html                  STRING,
-        custom_footer_css                   STRING
+        override_scss                       STRING
    END RECORD
 
-    TYPE ResourcesRecord RECORD
-        files DYNAMIC ARRAY OF STRING,
-        filesURI DYNAMIC ARRAY OF STRING
+    TYPE ResourcesRecord DYNAMIC ARRAY OF RECORD
+        files STRING,
+        filesURI STRING
    END RECORD
 
    TYPE LocalesRecord DYNAMIC ARRAY OF RECORD

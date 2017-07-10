@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="30a00" gstVersion="30a04" name="managedform" uid="{7f8dc982-bdb9-482b-8598-df5662bf7eea}">
+  <AGSettings>
+    <DynamicProperties version="2">
+      <DynamicProperty BRDynamicPropertyType="false" description="The language input type" initialValue="" isDefaultInherited="false" isHidden="false" label="language" name="webcomponent.codeMirror.language" readOnly="false" type="TEXT"/>
+    </DynamicProperties>
+    <NodeInfos version="1">
+      <NodeInfo mimeType="modFD/WebComponent" properties="webcomponent.codeMirror.language"/>
+    </NodeInfos>
+  </AGSettings>
+  <Record name="General" uid="{ebb66d21-cf54-40a6-b9b3-2107743c23d6}">
+    <RecordField fieldIdRef="32" name="config_name" uid="{5e7dadae-74da-4a32-84a7-2d2f57c8088c}"/>
+    <RecordField defaultValue="" fieldIdRef="1" name="font_size_ratio" uid="{4dfb2fb0-3e04-4586-b55e-bb95e485dbc1}"/>
+    <RecordField defaultValue="" fieldIdRef="2" name="margin_ratio" uid="{36a77942-f3d9-44bf-a445-3d26b5d03e55}"/>
+    <RecordField defaultValue="" fieldIdRef="3" name="field_height_ratio" uid="{21c9d87d-b0e8-486a-b527-0bc3e8122599}"/>
+    <RecordField defaultValue="" fieldIdRef="4" name="radiobutton_size" uid="{48306974-d1ae-4a5e-a767-9f43266df1f5}"/>
+    <RecordField fieldIdRef="5" name="checkbox_size" uid="{f97c8ca0-fefc-4c0d-bca1-bc719d2bd49a}"/>
+    <RecordField fieldIdRef="6" name="primary_background_color" uid="{10807f41-23f4-47c1-84b3-b6392c31a789}"/>
+    <RecordField fieldIdRef="7" name="secondary_background_color" uid="{731bfc6d-4363-484f-abd8-9e91f4a6e251}"/>
+    <RecordField fieldIdRef="8" name="field_background_color" uid="{88d306e9-6dec-40bb-b18d-6b517b4ebd54}"/>
+    <RecordField fieldIdRef="9" length="64" name="field_disabled_background" uid="{c54f9652-1d12-4733-8351-9d00f3786db7}"/>
+    <RecordField fieldIdRef="10" name="primary_color" uid="{b3144086-24fd-485e-a604-d9d75136e7f0}"/>
+    <RecordField fieldIdRef="11" name="primary_medium_color" uid="{4347df61-cdba-46ba-a4fe-e6e4d79ea9da}"/>
+    <RecordField fieldIdRef="12" name="primary_light_color" uid="{e3c0f633-fcae-4283-9092-2651fddc7425}"/>
+    <RecordField fieldIdRef="13" name="secondary_color" uid="{511bb57f-818a-43f6-be0e-04e002392493}"/>
+    <RecordField fieldIdRef="14" name="disabled_color" uid="{beb1bafa-ad7d-4eb3-bf99-51eaaeeec737}"/>
+    <RecordField fieldIdRef="15" name="separator_color" uid="{087d1cee-afd8-465d-9da3-9fe87221e85a}"/>
+    <RecordField fieldIdRef="17" name="header_color" uid="{464773ad-86e8-4f49-b48a-ca859a94b909}"/>
+    <RecordField fieldIdRef="18" name="message_color" uid="{e2c39874-7065-4403-9ba0-6a8ea2c0bd83}"/>
+    <RecordField fieldIdRef="19" name="error_color" uid="{cced5197-f7a5-47ba-89df-6c9fe5eef864}"/>
+    <RecordField fieldIdRef="16" name="sidebar_always_visible_min_width" uid="{b3ffdf67-bd25-42ec-bf5b-b0e705e601dd}"/>
+    <RecordField fieldIdRef="20" name="sidebar_default_width" uid="{7be85671-82ef-456b-9903-0f14962f1265}"/>
+    <RecordField fieldIdRef="21" name="toggle_right_sidebar_min_width" uid="{820b1d24-4086-46ff-9b3d-7ce4fcc55632}"/>
+    <RecordField fieldIdRef="22" name="animation_duration" uid="{ab31359c-cd02-439e-b3bc-a09af6237e3e}"/>
+    <RecordField fieldIdRef="23" name="desactivate_ending_popup" uid="{b86652a3-8183-4350-8cf4-c53c2e438b05}"/>
+    <RecordField fieldIdRef="35" name="message_display_time" uid="{17815936-ab65-4885-95d5-07ce4225478a}"/>
+  </Record>
+  <Record name="Editor" uid="{ac2ebe59-e369-4163-a6b2-d545e86da758}">
+    <RecordField defaultValue="0" fieldIdRef="24" name="custom_header" uid="{dcf9641b-73e8-4857-a7e2-44cf8e3fb015}"/>
+    <RecordField fieldIdRef="25" name="custom_header_html" uid="{1b3cd3f3-19f9-4784-a530-9868be1c96d4}"/>
+    <RecordField defaultValue="0" fieldIdRef="27" name="custom_footer" uid="{4163ee18-bb87-4c65-bd09-8756deca6078}"/>
+    <RecordField fieldIdRef="28" name="custom_footer_html" uid="{ac1f1c1c-8a50-4b0f-b636-eadd1c074ada}"/>
+    <RecordField fieldIdRef="36" name="override_scss" uid="{bf85377a-d3fc-49a2-8da9-95ea7345416e}"/>
+  </Record>
+  <Record name="Resources" uid="{bde10168-3535-4196-b99a-60a1adade197}">
+    <RecordField fieldIdRef="31" name="files" uid="{5109ab20-e09e-426f-98db-934e7e483b07}"/>
+    <RecordField fieldIdRef="26" name="filesURI" uid="{77ca03da-882b-4eba-9d56-f278e265e04c}"/>
+  </Record>
+  <Record name="Locales" uid="{695c2b74-e9cb-4e34-85e0-3e66eab8b169}">
+    <RecordField fieldIdRef="33" name="LocaleCode" uid="{65520214-f960-49ff-90b6-528a88df304e}"/>
+    <RecordField fieldIdRef="34" name="localeCM" uid="{fd83a405-d3cb-4cee-82d9-1b86a87d412d}"/>
+  </Record>
+  <Record name="record1" uid="{48af2fd8-cf94-48bd-8cf1-9b238ae4b732}">
+    <RecordField fieldIdRef="30" name="importFiles" uid="{6884d7d1-99aa-4d20-9ced-047121093355}"/>
+  </Record>
+  <Form gridHeight="64" gridWidth="220" name="form" text="GBC configurator">
+    <HBox gridHeight="62" gridWidth="149" name="hbox1" posX="0" posY="0" splitter="true">
+      <VBox gridHeight="62" gridWidth="145" name="vbox2" posX="2" posY="0">
+        <Folder gridHeight="60" gridWidth="145" name="folder1" posX="0" posY="1">
+          <Page name="page3" text="General">
+            <Grid gridHeight="42" gridWidth="138" name="grid1" posX="1" posY="0">
+              <Label gridHeight="1" gridWidth="28" name="label24" posX="2" posY="1" text="Configuration name"/>
+              <Edit comment="Name of the configuration you want to create" fieldId="32" gridHeight="1" gridWidth="34" lstrcomment="false" name="config_name" posX="32" posY="1" tabIndex="1" title="edit1" widget="Edit"/>
+              <Group gridHeight="5" gridWidth="66" name="group1" posX="1" posY="4" text="Ratio">
+                <Label gridHeight="1" gridWidth="29" name="label1" posX="1" posY="1" text="@font-size-ratio                             "/>
+                <Edit case="none" comment="The font size adjustment ratio in relation to Droid Sans font family sizes. For example, if the browser&apos;s available font for the &lt;body&gt; element is Times (12px), size of letters are adjusted by multiplying gbc-font-size-ratio by font size. In our example, they display at 9.6 pixels high, (0.8 × 12).&#10;" defaultValue="" fieldId="1" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="font_size_ratio" posX="31" posY="1" tabIndex="2" title="edit1" widget="Edit"/>
+                <Label color="black" gridHeight="1" gridWidth="29" name="label2" posX="1" posY="2" text="@margin-ratio"/>
+                <Edit comment="Ratio applied to the margin or space on the left of a field. When you type text in a field you have some space before text that is defined by this variable.&#10;" defaultValue="" fieldId="2" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="margin_ratio" posX="31" posY="2" tabIndex="3" title="edit1" verify="false" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label3" posX="1" posY="3" text="@field-height-ratio                                 "/>
+                <Edit century="R" comment="Ratio applied to the space around text in a field (top and bottom).&#10;" defaultValue="" fieldId="3" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="field_height_ratio" posX="31" posY="3" tabIndex="4" title="edit1" widget="Edit"/>
+              </Group>
+              <Group gridHeight="15" gridWidth="66" name="group2" posX="1" posY="9" text="Colors">
+                <Label gridHeight="1" gridWidth="29" name="label6" posX="1" posY="1" text="@primary-background-color                "/>
+                <Edit comment="&#9;Window primary background color." fieldId="6" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="primary_background_color" posX="31" posY="1" tabIndex="7" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label7" posX="1" posY="2" text="@secondary-background-color"/>
+                <Edit comment="Window/containers (group, drop-down menu) secondary color.&#10;" fieldId="7" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="secondary_background_color" posX="31" posY="2" tabIndex="8" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label8" posX="1" posY="3" text="@field-background-color"/>
+                <Edit comment="Widget background (bg) color.&#10;" fieldId="8" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="field_background_color" posX="31" posY="3" tabIndex="9" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label9" posX="1" posY="4" text="@field-disabled-background"/>
+                <Edit autoNext="false" comment="Widget disabled background color." completer="false" fieldId="9" gridHeight="1" gridWidth="34" justify="right" length="64" lstrcomment="false" name="field_disabled_background" posX="31" posY="4" tabIndex="10" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label11" posX="1" posY="5" text="@primary-color"/>
+                <Edit comment="Button/widget color gradient for dark intensity.&#10;" fieldId="10" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="primary_color" posX="31" posY="5" tabIndex="11" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label12" posX="1" posY="6" text="@primary-medium-color"/>
+                <Edit comment="Button/widget color gradient for normal intensity.&#10;" fieldId="11" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="primary_medium_color" posX="31" posY="6" tabIndex="12" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label13" posX="1" posY="7" text="@primary-light-color"/>
+                <Edit comment="Button/widget color gradient for light intensity.&#10;" fieldId="12" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="primary_light_color" placeholder="" posX="31" posY="7" tabIndex="13" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label14" posX="1" posY="8" text="@secondary-color"/>
+                <Edit comment="Widget (RADIOGROUP, CHECKBOX) border color.&#10;" fieldId="13" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="secondary_color" placeholder="" posX="31" posY="8" tabIndex="14" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label15" posX="1" posY="9" text="@disabled-color"/>
+                <Edit comment="Widget disabled color." fieldId="14" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="disabled_color" posX="31" posY="9" tabIndex="15" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label16" posX="1" posY="10" text="@separator-color"/>
+                <Edit comment="Toolbar separator color.&#10;" fieldId="15" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="separator_color" posX="31" posY="10" tabIndex="16" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label17" posX="1" posY="11" text="@header-color"/>
+                <Edit comment="Table header background color.&#10;" fieldId="17" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="header_color" posX="31" posY="11" tabIndex="17" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label18" posX="1" posY="12" text="@message-color"/>
+                <Edit comment="Message background color.&#10;" fieldId="18" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="message_color" posX="31" posY="12" tabIndex="18" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label10" posX="1" posY="13" text="@error-color"/>
+                <Edit comment="Error message background color.&#10;" fieldId="19" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="error_color" posX="31" posY="13" tabIndex="19" title="edit1" widget="Edit"/>
+              </Group>
+              <Group gridHeight="7" gridWidth="66" name="group7" posX="1" posY="24" text="Size">
+                <Label gridHeight="1" gridWidth="29" name="label4" posX="1" posY="1" text="@radiobutton-size   "/>
+                <Edit comment="Size of the radio button in pixels.&#10;" defaultValue="" fieldId="4" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="radiobutton_size" posX="31" posY="1" tabIndex="5" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label5" posX="1" posY="2" text="@checkbox-size"/>
+                <Edit comment="Size of the checkbox in pixels." fieldId="5" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="checkbox_size" posX="31" posY="2" tabIndex="6" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label19" posX="1" posY="3" text="@sidebar-always-visible-min-width     "/>
+                <Edit comment="Browser window width size (in pixels) for the left sidebar to appear. Use this setting to hide the left sidebar" fieldId="16" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="sidebar_always_visible_min_width" posX="31" posY="3" tabIndex="20" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label20" posX="1" posY="4" text="@sidebar-default-width "/>
+                <Edit comment="Default size of sidebar in pixels.&#10;" fieldId="20" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="sidebar_default_width" posX="31" posY="4" tabIndex="21" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label21" posX="1" posY="5" text="@toggle-right-sidebar-min-width"/>
+                <Edit comment="Browser window width size (in pixels) for the right sidebar to appear. Use this setting to hide the right sidebar." fieldId="21" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="toggle_right_sidebar_min_width" posX="31" posY="5" tabIndex="22" title="edit1" widget="Edit"/>
+              </Group>
+              <Group gridHeight="4" gridWidth="66" name="group8" posX="1" posY="31" text="Duration">
+                <Label gridHeight="1" gridWidth="29" name="label22" posX="1" posY="1" text="@animation-duration                            "/>
+                <Edit comment="Animation duration (in seconds), such as the speed of Product identification window pop-down appearance." fieldId="22" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="animation_duration" posX="31" posY="1" tabIndex="23" title="edit1" widget="Edit"/>
+                <Label gridHeight="1" gridWidth="29" name="label25" posX="1" posY="2" text="@message-display-time          "/>
+                <Edit comment="Specify the number of seconds to display the message pane or error message.&#10;A positive value is the number of seconds to display the message pane.&#10;Set to zero (0) to always display the message pane.&#10;Set to a negative value to always hide the message pane." fieldId="35" gridHeight="1" gridWidth="34" justify="right" lstrcomment="false" name="message_display_time" posX="31" posY="2" tabIndex="24" title="edit1" widget="Edit"/>
+              </Group>
+              <Group gridHeight="3" gridWidth="66" name="group9" posX="1" posY="35" text="Miscellaneous">
+                <Label gridHeight="1" gridWidth="29" name="label23" posX="1" posY="1" text="@desactivate-ending-popup               "/>
+                <CheckBox columnCount="2" comment="Deactivate the pop-up warning about leaving the application displayed when the browser tab containing your GBC application is closed." fieldId="23" fontPitch="variable" gridHeight="1" gridWidth="2" justify="right" lstrcomment="false" lstrtext="false" name="desactivate_ending_popup" notNull="true" posX="62" posY="1" repeat="false" rowCount="1" stepX="1" stepY="1" tabIndex="25" text="" title="edit1" widget="CheckBox"/>
+              </Group>
+            </Grid>
+          </Page>
+          <Page name="page1" text="Header">
+            <VBox gridHeight="46" gridWidth="77" name="vbox4" posX="1" posY="1">
+              <Grid gridHeight="2" gridWidth="77" name="grid2" posX="0" posY="1">
+                <CheckBox defaultValue="0" fieldId="24" gridHeight="1" gridWidth="16" name="custom_header" notNull="true" posX="1" posY="1" tabIndex="26" text="customize header" title="checkbox1" widget="CheckBox"/>
+              </Grid>
+              <HBox gridHeight="42" gridWidth="77" name="hbox2" posX="0" posY="3">
+                <Group gridHeight="42" gridWidth="73" name="group3" posX="2" posY="0" text="HTML">
+                  <Grid gridHeight="24" gridWidth="71" name="grid7" posX="1" posY="1">
+                    <WebComponent componentType="codeMirror" fieldId="25" gridHeight="23" gridWidth="69" lstrWebComponent="false" name="custom_header_html" posX="1" posY="1" stretch="both" tabIndex="27" widget="WebComponent">
+                      <DynamicProperty name="webcomponent.codeMirror.language" value="HTML"/>
+                    </WebComponent>
+                  </Grid>
+                </Group>
+              </HBox>
+            </VBox>
+          </Page>
+          <Page name="page2" text="Footer">
+            <VBox gridHeight="44" gridWidth="77" name="vbox5" posX="1" posY="1">
+              <Grid gridHeight="2" gridWidth="77" name="grid3" posX="0" posY="1">
+                <CheckBox defaultValue="0" fieldId="27" gridHeight="1" gridWidth="21" name="custom_footer" notNull="true" posX="1" posY="1" tabIndex="28" text="customize footer" title="checkbox1" widget="CheckBox"/>
+              </Grid>
+              <HBox gridHeight="40" gridWidth="77" name="hbox3" posX="0" posY="3">
+                <Group gridHeight="40" gridWidth="73" name="group5" posX="2" posY="0" text="HTML">
+                  <Grid gridHeight="27" gridWidth="71" name="grid5" posX="1" posY="1">
+                    <WebComponent componentType="codeMirror" fieldId="28" gridHeight="26" gridWidth="68" lstrWebComponent="true" name="custom_footer_html" posX="1" posY="1" tabIndex="29" widget="WebComponent">
+                      <DynamicProperty name="webcomponent.codeMirror.language" value="HTML"/>
+                    </WebComponent>
+                  </Grid>
+                </Group>
+              </HBox>
+            </VBox>
+          </Page>
+          <Page name="page6" text="SCSS">
+            <Group gridHeight="40" gridWidth="73" name="group10" posX="2" posY="1" text="SCSS editor">
+              <Grid gridHeight="28" gridWidth="68" name="grid10" posX="2" posY="1">
+                <WebComponent componentType="codeMirror" fieldId="36" gridHeight="26" gridWidth="65" name="override_scss" posX="1" posY="1" tabIndex="-1" widget="WebComponent">
+                  <DynamicProperty name="webcomponent.codeMirror.language" value="sass"/>
+                </WebComponent>
+              </Grid>
+            </Group>
+          </Page>
+          <Page name="page4" text="Locales">
+            <Grid gridHeight="58" gridWidth="74" name="grid9" posX="2" posY="1">
+              <ComboBox fieldId="33" gridHeight="1" gridWidth="22" initializer="initLocalesCombobox" items="" name="LocaleCode" notNull="true" posX="4" posY="1" required="false" tabIndex="30" title="combobox1" widget="ComboBox"/>
+              <Button gridHeight="1" gridWidth="16" name="LocalesAdd" posX="28" posY="1" tabIndex="31" text="Add a locales file"/>
+              <WebComponent componentType="codeMirror" fieldId="34" gridHeight="21" gridWidth="40" lstrWebComponent="false" name="localeCM" posX="4" posY="3" tabIndex="32" widget="WebComponent">
+                <DynamicProperty name="webcomponent.codeMirror.language" value="javascript"/>
+              </WebComponent>
+            </Grid>
+          </Page>
+          <Page name="page5" text="Resources">
+            <Grid gridHeight="22" gridWidth="28" name="grid4" posX="3" posY="1">
+              <ButtonEdit action="import_files" fieldId="30" gridHeight="1" gridWidth="20" name="importFiles" posX="1" posY="1" tabIndex="33" title="buttonedit1" widget="ButtonEdit"/>
+              <Table gridHeight="18" gridWidth="22" name="table1" posX="1" posY="2" totalRows="5">
+                <FFLabel fieldId="31" gridHeight="1" gridWidth="15" name="files" posX="0" posY="0" title="Resources" widget="FFLabel"/>
+                <FFLabel fieldId="26" gridHeight="3" gridWidth="4" lstrtitle="false" name="filesURI" posX="15" posY="0" title="ResourcesPath" widget="FFLabel"/>
+              </Table>
+            </Grid>
+          </Page>
+        </Folder>
+      </VBox>
+    </HBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0ADgAYQBmADIAZgBkADgALQBjAGYAOQA0AC0ANAA4AGIAZAAtADgAYwBmADEALQA5AGIAMgAzADgAYQBlADQAYgA3ADMAMgB9wHwAAAAAAABAS4AAAAAAAD+wIMSbpeNXAQAAAEwAewA2ADkANQBjADIAYgA3ADQALQBlADkAYwBiAC0ANABlADMANAAtADgANQBlADAALQAzAGUANgA2AGUAYQBiADgAYgAxADYAOQB9QEkAAAAAAABASQAAAAAAAD+xJul41P33AQAAAEwAewBhAGMAMgBlAGIAZQA1ADkALQBlADMANgA5AC0ANAAxADYAMwAtAGEANgBiADIALQBkADUANAA1AGUAOAA2AGQAYQA3ADUAOAB9wG+gAAAAAABAaUAAAAAAAD+rpeNT987fAQAAAEwAewBlAGIAYgA2ADYAZAAyADEALQBjAGYANQA0AC0ANAAwAGEANgAtAGIAOQBiADMALQAyADEAMAA3ADcANAAzAGMAMgAzAGQANgB9wIfIAAAAAAC/8AAAAAAAAD+tLxqfvnbPAQAAAEwAewBiAGQAZQAxADAAMQA2ADgALQAzADUAMwA1AC0ANAAxADkANgAtAGIAOQA5AGEALQA2ADAAYQAxAGEAZABhAGQAZQAxADkANwB9wHBQAAAAAABASgAAAAAAAD+srAgxJul/AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

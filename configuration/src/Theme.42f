@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="Theme" build="3.10.06" text="GBC configurator" width="71" height="58">
+  <LStr text="GBC configurator"/>
+  <HBox name="hbox1" splitter="1">
+    <VBox name="vbox2">
+      <Folder name="folder1">
+        <Page name="page3" text="General">
+          <LStr text="General"/>
+          <Grid name="grid1" width="67" height="42">
+            <Label name="label24" width="28" text="Configuration name" posY="1" posX="2" gridWidth="28">
+              <LStr text="Configuration name"/>
+            </Label>
+            <FormField name="formonly.config_name" colName="config_name" fieldId="0" sqlTabName="formonly" tabIndex="1">
+              <Edit width="34" comment="Name of the configuration you want to create" posY="1" posX="32" gridWidth="34"/>
+            </FormField>
+            <Group name="group1" text="Ratio" posY="4" posX="1" gridWidth="66" gridHeight="5">
+              <LStr text="Ratio"/>
+              <Label name="label1" width="29" text="@font-size-ratio                             " posY="1" posX="1" gridWidth="29">
+                <LStr text="@font-size-ratio                             "/>
+              </Label>
+              <FormField name="formonly.font_size_ratio" colName="font_size_ratio" fieldId="1" sqlTabName="formonly" tabIndex="2" defaultValue="">
+                <Edit width="34" justify="right" comment="The font size adjustment ratio in relation to Droid Sans font family sizes. For example, if the browser&apos;s available font for the &lt;body&gt; element is Times (12px), size of letters are adjusted by multiplying gbc-font-size-ratio by font size. In our example, they display at 9.6 pixels high, (0.8 × 12).&#10;" posY="1" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label2" width="29" text="@margin-ratio" posY="2" posX="1" gridWidth="29">
+                <LStr text="@margin-ratio"/>
+              </Label>
+              <FormField name="formonly.margin_ratio" colName="margin_ratio" fieldId="2" sqlTabName="formonly" tabIndex="3" defaultValue="">
+                <Edit width="34" justify="right" comment="Ratio applied to the margin or space on the left of a field. When you type text in a field you have some space before text that is defined by this variable.&#10;" posY="2" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label3" width="29" text="@field-height-ratio                                 " posY="3" posX="1" gridWidth="29">
+                <LStr text="@field-height-ratio                                 "/>
+              </Label>
+              <FormField name="formonly.field_height_ratio" colName="field_height_ratio" fieldId="3" sqlTabName="formonly" tabIndex="4" defaultValue="">
+                <Edit width="34" justify="right" century="R" comment="Ratio applied to the space around text in a field (top and bottom).&#10;" posY="3" posX="31" gridWidth="34"/>
+              </FormField>
+            </Group>
+            <Group name="group2" text="Colors" posY="9" posX="1" gridWidth="66" gridHeight="15">
+              <LStr text="Colors"/>
+              <Label name="label6" width="29" text="@primary-background-color                " posY="1" posX="1" gridWidth="29">
+                <LStr text="@primary-background-color                "/>
+              </Label>
+              <FormField name="formonly.primary_background_color" colName="primary_background_color" fieldId="4" sqlTabName="formonly" tabIndex="7">
+                <Edit width="34" justify="right" comment="&#9;Window primary background color." posY="1" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label7" width="29" text="@secondary-background-color" posY="2" posX="1" gridWidth="29">
+                <LStr text="@secondary-background-color"/>
+              </Label>
+              <FormField name="formonly.secondary_background_color" colName="secondary_background_color" fieldId="5" sqlTabName="formonly" tabIndex="8">
+                <Edit width="34" justify="right" comment="Window/containers (group, drop-down menu) secondary color.&#10;" posY="2" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label8" width="29" text="@field-background-color" posY="3" posX="1" gridWidth="29">
+                <LStr text="@field-background-color"/>
+              </Label>
+              <FormField name="formonly.field_background_color" colName="field_background_color" fieldId="6" sqlTabName="formonly" tabIndex="9">
+                <Edit width="34" justify="right" comment="Widget background (bg) color.&#10;" posY="3" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label9" width="29" text="@field-disabled-background" posY="4" posX="1" gridWidth="29">
+                <LStr text="@field-disabled-background"/>
+              </Label>
+              <FormField name="formonly.field_disabled_background" colName="field_disabled_background" fieldId="7" sqlTabName="formonly" tabIndex="10">
+                <Edit width="34" justify="right" comment="Widget disabled background color." posY="4" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label11" width="29" text="@primary-color" posY="5" posX="1" gridWidth="29">
+                <LStr text="@primary-color"/>
+              </Label>
+              <FormField name="formonly.primary_color" colName="primary_color" fieldId="8" sqlTabName="formonly" tabIndex="11">
+                <Edit width="34" justify="right" comment="Button/widget color gradient for dark intensity.&#10;" posY="5" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label12" width="29" text="@primary-medium-color" posY="6" posX="1" gridWidth="29">
+                <LStr text="@primary-medium-color"/>
+              </Label>
+              <FormField name="formonly.primary_medium_color" colName="primary_medium_color" fieldId="9" sqlTabName="formonly" tabIndex="12">
+                <Edit width="34" justify="right" comment="Button/widget color gradient for normal intensity.&#10;" posY="6" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label13" width="29" text="@primary-light-color" posY="7" posX="1" gridWidth="29">
+                <LStr text="@primary-light-color"/>
+              </Label>
+              <FormField name="formonly.primary_light_color" colName="primary_light_color" fieldId="10" sqlTabName="formonly" tabIndex="13">
+                <Edit width="34" placeholder="" justify="right" comment="Button/widget color gradient for light intensity.&#10;" posY="7" posX="31" gridWidth="34">
+                  <LStr placeholder=""/>
+                </Edit>
+              </FormField>
+              <Label name="label14" width="29" text="@secondary-color" posY="8" posX="1" gridWidth="29">
+                <LStr text="@secondary-color"/>
+              </Label>
+              <FormField name="formonly.secondary_color" colName="secondary_color" fieldId="11" sqlTabName="formonly" tabIndex="14">
+                <Edit width="34" placeholder="" justify="right" comment="Widget (RADIOGROUP, CHECKBOX) border color.&#10;" posY="8" posX="31" gridWidth="34">
+                  <LStr placeholder=""/>
+                </Edit>
+              </FormField>
+              <Label name="label15" width="29" text="@disabled-color" posY="9" posX="1" gridWidth="29">
+                <LStr text="@disabled-color"/>
+              </Label>
+              <FormField name="formonly.disabled_color" colName="disabled_color" fieldId="12" sqlTabName="formonly" tabIndex="15">
+                <Edit width="34" justify="right" comment="Widget disabled color." posY="9" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label16" width="29" text="@separator-color" posY="10" posX="1" gridWidth="29">
+                <LStr text="@separator-color"/>
+              </Label>
+              <FormField name="formonly.separator_color" colName="separator_color" fieldId="13" sqlTabName="formonly" tabIndex="16">
+                <Edit width="34" justify="right" comment="Toolbar separator color.&#10;" posY="10" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label17" width="29" text="@header-color" posY="11" posX="1" gridWidth="29">
+                <LStr text="@header-color"/>
+              </Label>
+              <FormField name="formonly.header_color" colName="header_color" fieldId="14" sqlTabName="formonly" tabIndex="17">
+                <Edit width="34" justify="right" comment="Table header background color.&#10;" posY="11" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label18" width="29" text="@message-color" posY="12" posX="1" gridWidth="29">
+                <LStr text="@message-color"/>
+              </Label>
+              <FormField name="formonly.message_color" colName="message_color" fieldId="15" sqlTabName="formonly" tabIndex="18">
+                <Edit width="34" justify="right" comment="Message background color.&#10;" posY="12" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label10" width="29" text="@error-color" posY="13" posX="1" gridWidth="29">
+                <LStr text="@error-color"/>
+              </Label>
+              <FormField name="formonly.error_color" colName="error_color" fieldId="16" sqlTabName="formonly" tabIndex="19">
+                <Edit width="34" justify="right" comment="Error message background color.&#10;" posY="13" posX="31" gridWidth="34"/>
+              </FormField>
+            </Group>
+            <Group name="group7" text="Size" posY="24" posX="1" gridWidth="66" gridHeight="7">
+              <LStr text="Size"/>
+              <Label name="label4" width="29" text="@radiobutton-size   " posY="1" posX="1" gridWidth="29">
+                <LStr text="@radiobutton-size   "/>
+              </Label>
+              <FormField name="formonly.radiobutton_size" colName="radiobutton_size" fieldId="17" sqlTabName="formonly" tabIndex="5" defaultValue="">
+                <Edit width="34" justify="right" comment="Size of the radio button in pixels.&#10;" posY="1" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label5" width="29" text="@checkbox-size" posY="2" posX="1" gridWidth="29">
+                <LStr text="@checkbox-size"/>
+              </Label>
+              <FormField name="formonly.checkbox_size" colName="checkbox_size" fieldId="18" sqlTabName="formonly" tabIndex="6">
+                <Edit width="34" justify="right" comment="Size of the checkbox in pixels." posY="2" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label19" width="29" text="@sidebar-always-visible-min-width     " posY="3" posX="1" gridWidth="29">
+                <LStr text="@sidebar-always-visible-min-width     "/>
+              </Label>
+              <FormField name="formonly.sidebar_always_visible_min_width" colName="sidebar_always_visible_min_width" fieldId="19" sqlTabName="formonly" tabIndex="20">
+                <Edit width="34" justify="right" comment="Browser window width size (in pixels) for the left sidebar to appear. Use this setting to hide the left sidebar" posY="3" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label20" width="29" text="@sidebar-default-width " posY="4" posX="1" gridWidth="29">
+                <LStr text="@sidebar-default-width "/>
+              </Label>
+              <FormField name="formonly.sidebar_default_width" colName="sidebar_default_width" fieldId="20" sqlTabName="formonly" tabIndex="21">
+                <Edit width="34" justify="right" comment="Default size of sidebar in pixels.&#10;" posY="4" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label21" width="29" text="@toggle-right-sidebar-min-width" posY="5" posX="1" gridWidth="29">
+                <LStr text="@toggle-right-sidebar-min-width"/>
+              </Label>
+              <FormField name="formonly.toggle_right_sidebar_min_width" colName="toggle_right_sidebar_min_width" fieldId="21" sqlTabName="formonly" tabIndex="22">
+                <Edit width="34" justify="right" comment="Browser window width size (in pixels) for the right sidebar to appear. Use this setting to hide the right sidebar." posY="5" posX="31" gridWidth="34"/>
+              </FormField>
+            </Group>
+            <Group name="group8" text="Duration" posY="31" posX="1" gridWidth="66" gridHeight="4">
+              <LStr text="Duration"/>
+              <Label name="label22" width="29" text="@animation-duration                            " posY="1" posX="1" gridWidth="29">
+                <LStr text="@animation-duration                            "/>
+              </Label>
+              <FormField name="formonly.animation_duration" colName="animation_duration" fieldId="22" sqlTabName="formonly" tabIndex="23">
+                <Edit width="34" justify="right" comment="Animation duration (in seconds), such as the speed of Product identification window pop-down appearance." posY="1" posX="31" gridWidth="34"/>
+              </FormField>
+              <Label name="label25" width="29" text="@message-display-time          " posY="2" posX="1" gridWidth="29">
+                <LStr text="@message-display-time          "/>
+              </Label>
+              <FormField name="formonly.message_display_time" colName="message_display_time" fieldId="23" sqlTabName="formonly" tabIndex="24">
+                <Edit width="34" justify="right" comment="Specify the number of seconds to display the message pane or error message.&#10;A positive value is the number of seconds to display the message pane.&#10;Set to zero (0) to always display the message pane.&#10;Set to a negative value to always hide the message pane." posY="2" posX="31" gridWidth="34"/>
+              </FormField>
+            </Group>
+            <Group name="group9" text="Miscellaneous" posY="35" posX="1" gridWidth="66" gridHeight="3">
+              <LStr text="Miscellaneous"/>
+              <Label name="label23" width="29" text="@desactivate-ending-popup               " posY="1" posX="1" gridWidth="29">
+                <LStr text="@desactivate-ending-popup               "/>
+              </Label>
+              <FormField name="formonly.desactivate_ending_popup" colName="desactivate_ending_popup" fieldId="24" sqlTabName="formonly" tabIndex="25" notNull="1" required="1">
+                <CheckBox width="2" text="" fontPitch="variable" justify="right" comment="Deactivate the pop-up warning about leaving the application displayed when the browser tab containing your GBC application is closed." posY="1" posX="62" gridWidth="2"/>
+              </FormField>
+            </Group>
+          </Grid>
+        </Page>
+        <Page name="page1" text="Header">
+          <LStr text="Header"/>
+          <VBox name="vbox4">
+            <Grid name="grid2" width="18" height="2">
+              <FormField name="formonly.custom_header" colName="custom_header" fieldId="25" sqlTabName="formonly" tabIndex="26" defaultValue="0" notNull="1" required="1">
+                <CheckBox width="16" text="customize header" posY="1" posX="1" gridWidth="16">
+                  <LStr text="customize header"/>
+                </CheckBox>
+              </FormField>
+            </Grid>
+            <HBox name="hbox2">
+              <Group name="group3" text="HTML">
+                <LStr text="HTML"/>
+                <Grid name="grid7" width="71" height="24">
+                  <FormField name="formonly.custom_header_html" colName="custom_header_html" fieldId="26" sqlTabName="formonly" tabIndex="27">
+                    <WebComponent width="69" stretch="both" componentType="codeMirror" posY="1" posX="1" gridWidth="69" gridHeight="23">
+                      <PropertyDict name="properties">
+                        <Property name="language" value="HTML"/>
+                      </PropertyDict>
+                    </WebComponent>
+                  </FormField>
+                </Grid>
+              </Group>
+            </HBox>
+          </VBox>
+        </Page>
+        <Page name="page2" text="Footer">
+          <LStr text="Footer"/>
+          <VBox name="vbox5">
+            <Grid name="grid3" width="23" height="2">
+              <FormField name="formonly.custom_footer" colName="custom_footer" fieldId="27" sqlTabName="formonly" tabIndex="28" defaultValue="0" notNull="1" required="1">
+                <CheckBox width="21" text="customize footer" posY="1" posX="1" gridWidth="21">
+                  <LStr text="customize footer"/>
+                </CheckBox>
+              </FormField>
+            </Grid>
+            <HBox name="hbox3">
+              <Group name="group5" text="HTML">
+                <LStr text="HTML"/>
+                <Grid name="grid5" width="70" height="27">
+                  <FormField name="formonly.custom_footer_html" colName="custom_footer_html" fieldId="28" sqlTabName="formonly" tabIndex="29">
+                    <WebComponent width="68" componentType="codeMirror" posY="1" posX="1" gridWidth="68" gridHeight="26">
+                      <PropertyDict name="properties">
+                        <Property name="language" value="HTML">
+                          <LStr value="HTML"/>
+                        </Property>
+                      </PropertyDict>
+                    </WebComponent>
+                  </FormField>
+                </Grid>
+              </Group>
+            </HBox>
+          </VBox>
+        </Page>
+        <Page name="page6" text="SCSS">
+          <LStr text="SCSS"/>
+          <Group name="group10" text="SCSS editor">
+            <LStr text="SCSS editor"/>
+            <Grid name="grid10" width="67" height="28">
+              <FormField name="formonly.override_scss" colName="override_scss" fieldId="29" sqlTabName="formonly" tabIndex="34">
+                <WebComponent width="65" componentType="codeMirror" posY="1" posX="1" gridWidth="65" gridHeight="26">
+                  <PropertyDict name="properties">
+                    <Property name="language" value="sass"/>
+                  </PropertyDict>
+                </WebComponent>
+              </FormField>
+            </Grid>
+          </Group>
+        </Page>
+        <Page name="page4" text="Locales">
+          <LStr text="Locales"/>
+          <Grid name="grid9" width="45" height="58">
+            <FormField name="formonly.localecode" colName="localecode" fieldId="30" sqlTabName="formonly" tabIndex="30" notNull="1" required="1">
+              <ComboBox width="20" initializer="initlocalescombobox" posY="1" posX="4" gridWidth="22"/>
+            </FormField>
+            <Button name="localesadd" width="16" tabIndex="31" text="Add a locales file" posY="1" posX="28" gridWidth="16">
+              <LStr text="Add a locales file"/>
+            </Button>
+            <FormField name="formonly.localecm" colName="localecm" fieldId="31" sqlTabName="formonly" tabIndex="32">
+              <WebComponent width="40" componentType="codeMirror" posY="3" posX="4" gridWidth="40" gridHeight="21">
+                <PropertyDict name="properties">
+                  <Property name="language" value="javascript"/>
+                </PropertyDict>
+              </WebComponent>
+            </FormField>
+          </Grid>
+        </Page>
+        <Page name="page5" text="Resources">
+          <LStr text="Resources"/>
+          <Grid name="grid4" width="23" height="22">
+            <FormField name="formonly.importfiles" colName="importfiles" fieldId="32" sqlTabName="formonly" tabIndex="33">
+              <ButtonEdit width="18" action="import_files" posY="1" posX="1" gridWidth="20"/>
+            </FormField>
+            <Table pageSize="5" name="table1" width="22" posY="2" posX="1" gridWidth="22" gridHeight="18" tabName="resources">
+              <TableColumn name="formonly.files" colName="files" fieldId="33" sqlTabName="formonly" text="Resources" noEntry="1" tabIndex="35">
+                <Label width="15"/>
+                <LStr text="Resources"/>
+              </TableColumn>
+              <TableColumn name="formonly.filesuri" colName="filesuri" fieldId="34" sqlTabName="formonly" text="ResourcesPath" noEntry="1" tabIndex="36">
+                <Label width="4"/>
+              </TableColumn>
+            </Table>
+          </Grid>
+        </Page>
+      </Folder>
+    </VBox>
+  </HBox>
+  <RecordView tabName="formonly">
+    <Link colName="config_name" fieldIdRef="0"/>
+    <Link colName="font_size_ratio" fieldIdRef="1"/>
+    <Link colName="margin_ratio" fieldIdRef="2"/>
+    <Link colName="field_height_ratio" fieldIdRef="3"/>
+    <Link colName="primary_background_color" fieldIdRef="4"/>
+    <Link colName="secondary_background_color" fieldIdRef="5"/>
+    <Link colName="field_background_color" fieldIdRef="6"/>
+    <Link colName="field_disabled_background" fieldIdRef="7"/>
+    <Link colName="primary_color" fieldIdRef="8"/>
+    <Link colName="primary_medium_color" fieldIdRef="9"/>
+    <Link colName="primary_light_color" fieldIdRef="10"/>
+    <Link colName="secondary_color" fieldIdRef="11"/>
+    <Link colName="disabled_color" fieldIdRef="12"/>
+    <Link colName="separator_color" fieldIdRef="13"/>
+    <Link colName="header_color" fieldIdRef="14"/>
+    <Link colName="message_color" fieldIdRef="15"/>
+    <Link colName="error_color" fieldIdRef="16"/>
+    <Link colName="radiobutton_size" fieldIdRef="17"/>
+    <Link colName="checkbox_size" fieldIdRef="18"/>
+    <Link colName="sidebar_always_visible_min_width" fieldIdRef="19"/>
+    <Link colName="sidebar_default_width" fieldIdRef="20"/>
+    <Link colName="toggle_right_sidebar_min_width" fieldIdRef="21"/>
+    <Link colName="animation_duration" fieldIdRef="22"/>
+    <Link colName="message_display_time" fieldIdRef="23"/>
+    <Link colName="desactivate_ending_popup" fieldIdRef="24"/>
+    <Link colName="custom_header" fieldIdRef="25"/>
+    <Link colName="custom_header_html" fieldIdRef="26"/>
+    <Link colName="custom_footer" fieldIdRef="27"/>
+    <Link colName="custom_footer_html" fieldIdRef="28"/>
+    <Link colName="override_scss" fieldIdRef="29"/>
+    <Link colName="localecode" fieldIdRef="30"/>
+    <Link colName="localecm" fieldIdRef="31"/>
+    <Link colName="importfiles" fieldIdRef="32"/>
+    <Link colName="files" fieldIdRef="33"/>
+    <Link colName="filesuri" fieldIdRef="34"/>
+  </RecordView>
+  <RecordView tabName="general">
+    <Link colName="config_name" fieldIdRef="0"/>
+    <Link colName="font_size_ratio" fieldIdRef="1"/>
+    <Link colName="margin_ratio" fieldIdRef="2"/>
+    <Link colName="field_height_ratio" fieldIdRef="3"/>
+    <Link colName="radiobutton_size" fieldIdRef="17"/>
+    <Link colName="checkbox_size" fieldIdRef="18"/>
+    <Link colName="primary_background_color" fieldIdRef="4"/>
+    <Link colName="secondary_background_color" fieldIdRef="5"/>
+    <Link colName="field_background_color" fieldIdRef="6"/>
+    <Link colName="field_disabled_background" fieldIdRef="7"/>
+    <Link colName="primary_color" fieldIdRef="8"/>
+    <Link colName="primary_medium_color" fieldIdRef="9"/>
+    <Link colName="primary_light_color" fieldIdRef="10"/>
+    <Link colName="secondary_color" fieldIdRef="11"/>
+    <Link colName="disabled_color" fieldIdRef="12"/>
+    <Link colName="separator_color" fieldIdRef="13"/>
+    <Link colName="header_color" fieldIdRef="14"/>
+    <Link colName="message_color" fieldIdRef="15"/>
+    <Link colName="error_color" fieldIdRef="16"/>
+    <Link colName="sidebar_always_visible_min_width" fieldIdRef="19"/>
+    <Link colName="sidebar_default_width" fieldIdRef="20"/>
+    <Link colName="toggle_right_sidebar_min_width" fieldIdRef="21"/>
+    <Link colName="animation_duration" fieldIdRef="22"/>
+    <Link colName="desactivate_ending_popup" fieldIdRef="24"/>
+    <Link colName="message_display_time" fieldIdRef="23"/>
+  </RecordView>
+  <RecordView tabName="editor">
+    <Link colName="custom_header" fieldIdRef="25"/>
+    <Link colName="custom_header_html" fieldIdRef="26"/>
+    <Link colName="custom_footer" fieldIdRef="27"/>
+    <Link colName="custom_footer_html" fieldIdRef="28"/>
+    <Link colName="override_scss" fieldIdRef="29"/>
+  </RecordView>
+  <RecordView tabName="locales">
+    <Link colName="localecode" fieldIdRef="30"/>
+    <Link colName="localecm" fieldIdRef="31"/>
+  </RecordView>
+  <RecordView tabName="record1">
+    <Link colName="importfiles" fieldIdRef="32"/>
+  </RecordView>
+</Form>

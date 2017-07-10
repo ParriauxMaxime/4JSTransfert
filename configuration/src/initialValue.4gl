@@ -1,4 +1,4 @@
-GLOBALS "src/global.4gl"
+GLOBALS "global.4gl"
 
 FUNCTION setDefaultValueOverview()
     DEFINE Overview OverviewRecord
@@ -27,7 +27,7 @@ FUNCTION setDefaultValueOverview()
     LET Overview.animation_duration = '0.7s';
     LET Overview.message_display_time = '2';
     LET Overview.desactivate_ending_popup = 'FALSE';
-    LET Overview.config_name = "";
+    LET Overview.config_name = "Untitled";
     RETURN Overview.*
 END FUNCTION
 
@@ -36,9 +36,8 @@ FUNCTION setDefaultEditor()
     LET editor.custom_footer = FALSE;
     LET editor.custom_header = FALSE;
     LET editor.custom_header_html = "<header>\n</header>";
-    LET editor.custom_header_css  = "header {\n}";
     LET editor.custom_footer_html = "<footer>\n</footer>";
-    LET editor.custom_footer_css  = "footer {\n}";
+    LET editor.override_scss = "";
     RETURN editor.*
 END FUNCTION
 

@@ -57,35 +57,34 @@
       <NodeInfo mimeType="pm/package" properties="packageId;packageLabel;packageVersion;packageVersionName;launchScreen320x480;launchScreen640x960;launchScreen;launchScreen750x1334;launchScreen1334x750;launchScreen1242x2208;launchScreen2208x1242;launchScreen768x1024;launchScreen1024x768;launchScreen1536x2048;launchScreen2048x1536;launchScreen2048x2732;launchScreen2732x2048;launchScreenXib;icon29x29;icon40x40;icon58x58;icon60x60;icon76x76;icon80x80;icon87x87;icon120x120;icon152x152;icon167x167;icon180x180;gma-primary-color;gma-primary-dark-color;gma-accent-color;gma-actionbar-color;gma-primaryText-color;gma-windowBackground-color;gma-navigationBarBackground-color;icon-ldpi;icon-mdpi;icon-hdpi;icon-xhdpi;icon-xxhdpi;status-icon-mdpi;status-icon-hdpi;status-icon-xhdpi;permissions;required;cordova"/>
     </NodeInfos>
   </Settings>
-  <LanguageList version="1.0"/>
+  <LanguageList version="1.0">
+    <Language name="Genero">
+      <BuildRuleList>
+        <BuildRule additionalDependencies="" commands="$(fglcomp) $(Implicit) --java-option=-Xss2m $(CompilerOptions) -I &quot;$(GGCDIR)/lib&quot; &quot;$(InputPath)&quot;;$(move) &quot;$(InputDir)/$(InputBaseName).42m&quot; &quot;$(TargetDir)/$(InputBaseName).42m&quot;" description="Special IMPORT JAVA" enabled="true" fileType="application/genero-4gl" intermediateFiles="" outputFiles="$(TargetDir)/$(InputBaseName).42m"/>
+      </BuildRuleList>
+      <LinkRuleList/>
+      <VariableList/>
+    </Language>
+  </LanguageList>
   <PlatformList version="1.0"/>
   <Group label="Configuration" language="Genero">
     <Application binaryName="Configuration" id="437125472" label="Configuration">
-      <VirtualFolder label="globals">
-        <File filePath="src/global.4gl"/>
-      </VirtualFolder>
       <VirtualFolder label="src">
-        <VirtualFolder label="4gl">
-          <File filePath="src/customization.4gl"/>
-          <File filePath="src/initialValue.4gl"/>
-          <File filePath="src/locales.4gl"/>
-          <File filePath="src/main.4gl"/>
-          <File filePath="src/resources.4gl"/>
-          <File filePath="src/REST.4gl"/>
-        </VirtualFolder>
-        <VirtualFolder label="4fd">
-          <File filePath="src/Theme.4fd"/>
-        </VirtualFolder>
+        <File filePath="../src/customization.4gl"/>
+        <File filePath="../src/global.4gl"/>
+        <File filePath="../src/initialValue.4gl"/>
+        <File filePath="../src/locales.4gl"/>
+        <File filePath="../src/main.4gl"/>
+        <File filePath="../src/resources.4gl"/>
+        <File filePath="../src/REST.4gl"/>
+        <File filePath="../src/Theme.4fd"/>
+        <File compilerOptions="--java-option=-Xss2m" filePath="../src/validator.4gl"/>
       </VirtualFolder>
-      <File filePath="Configuration.xcf"/>
+      <File filePath="../Configuration.xcf"/>
     </Application>
   </Group>
   <Group label="res" language="Genero">
     <Library binaryName="styles" id="-337514260" label="styles"/>
-    <Library binaryName="webcomponents" id="-28210287" label="webcomponents">
-      <File filePath="webcomponents/codeMirror/codeMirror.html"/>
-      <File filePath="webcomponents/codeMirror/codeMirror.js"/>
-      <File filePath="webcomponents/codeMirror/codeMirror.wcsettings"/>
-    </Library>
+    <Library binaryName="webcomponents" id="-28210287" label="webcomponents"/>
   </Group>
 </Project>

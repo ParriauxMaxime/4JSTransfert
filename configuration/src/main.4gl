@@ -4,10 +4,11 @@ IMPORT FGL REST
 IMPORT FGL customization
 IMPORT FGL locales
 IMPORT FGL resources
+IMPORT FGL validator
 IMPORT XML
 IMPORT com
 IMPORT os
-GLOBALS 'src/global.4gl'
+GLOBALS 'global.4gl'
 
 --gsform -M -i -keep gui.4fd POUR COMPILER 4FD TO .per
 
@@ -17,7 +18,8 @@ MAIN
             localeCM        STRING,
             prevLocaleCode  INTEGER,
             LocaleCode      INTEGER,
-            gbcName         STRING;
+            gbcName         STRING,
+            validation      BOOLEAN;
 
     OPEN FORM Theme FROM "Theme"
     DISPLAY FORM Theme
@@ -29,6 +31,18 @@ MAIN
 
     DIALOG ATTRIBUTES(UNBUFFERED)
         INPUT BY NAME rec.Overview.* ATTRIBUTES(WITHOUT DEFAULTS)
+                
+            ON CHANGE config_name, font_size_ratio, margin_ratio, field_height_ratio, radiobutton_size,
+            checkbox_size, primary_background_color, secondary_background_color, field_background_color, 
+            field_disabled_background,	primary_color, primary_medium_color, primary_light_color, secondary_color,
+            disabled_color, separator_color, header_color, message_color, error_color, sidebar_always_visible_min_width, sidebar_default_width,
+            toggle_right_sidebar_min_width, animation_duration,	desactivate_ending_popup
+                CALL validateDataType(URL, rec.*) RETURNING validation;
+                IF validation == FALSE THEN
+                    CALL DIALOG.setActionActive('build', FALSE)
+                ELSE
+                    CALL DIALOG.setActionActive('build', TRUE)
+                END IF
         END INPUT
 
         INPUT BY NAME rec.Editor.* ATTRIBUTES(WITHOUT DEFAULTS)
@@ -50,9 +64,11 @@ MAIN
         END INPUT
 
 
-        DISPLAY ARRAY rec.Resources.filesURI TO resources.*
+        DISPLAY ARRAY rec.Resources TO Resources.*
         END DISPLAY
-
+       -- DISPLAY ARRAY rec.Resources.filesURI TO resourcesPath.*
+        --END DISPLAY
+        
         BEFORE DIALOG
             LET gbcName = NULL;
             CALL DIALOG.setActionActive('download', FALSE);
@@ -61,10 +77,10 @@ MAIN
         ON ACTION import_files
             CALL importFiles(rec.*) RETURNING rec.*;
 
-        ON ACTION importCusto ATTRIBUTES(TEXT="Import")
+        ON ACTION Import ATTRIBUTES(TEXT="Import")
             CALL importCustomization(URL, rec.*, ui.ComboBox.forName('localecode')) RETURNING rec.*
 
-        ON ACTION sendToServer ATTRIBUTES(TEXT="Build")
+        ON ACTION build ATTRIBUTES(TEXT="Build")
            CALL buildCustomization(URL, rec.*) RETURNING gbcName;
             IF gbcName IS NOT NULL THEN
                 CALL DIALOG.setActionActive('download', TRUE)

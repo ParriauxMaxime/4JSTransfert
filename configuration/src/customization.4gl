@@ -1,7 +1,8 @@
 IMPORT com
 IMPORT os
 IMPORT util
-GLOBALS "src/global.4gl"
+
+GLOBALS "global.4gl"
 
 FUNCTION buildCustomization(URL STRING, rec httpRecord)
     DEFINE result STRING;
@@ -53,22 +54,24 @@ FUNCTION importCustomization(URL, rec, combobox)
     LET recOpenFile.wildcards = "*.zip";
     LET recOpenFile.caption = "Select file";
     CALL ui.Interface.frontCall("standard", "openFile", [recOpenFile.path, recOpenFile.NAME, recOpenFile.wildcards, recOpenFile.caption], [result])
-    CALL fgl_getfile(result, '../resources/'||rec.Token||'/'||result)
-    MESSAGE SFMT("File %1", result)
-    LET result = os.Path.pwd(), "/../resources/", rec.Token, '/', result;
-    CALL POSTZipRequest(URL||'/import', result) RETURNING result;
-    IF result IS NULL THEN
-        ERROR 'Cannot upload resources to server'
-    ELSE
-        MESSAGE 'Resources uploaded';
+    IF result IS NOT NULL THEN 
+        CALL fgl_getfile(result, '../resources/'||rec.Token||'/'||result)
+        MESSAGE SFMT("File %1", result)
+        LET result = os.Path.pwd(), "/../resources/", rec.Token, '/', result;
+        CALL POSTZipRequest(URL||'/import', result) RETURNING result;
+        IF result IS NULL THEN
+            ERROR 'Cannot upload resources to server'
+        ELSE
+            MESSAGE 'Resources uploaded';
+        END IF
+        CALL util.JSON.parse(result, rec);
+        CALL combobox.clear();
+        DISPLAY combobox.getItemCount();
+        DISPLAY 'ICI'||util.JSON.stringify(rec.Locales);
+        FOR i = 1 TO rec.Locales.getLength()
+            DISPLAY 'add '||rec.Locales[i].LocaleCode||'...'||rec.Locales[i].LocaleContent;
+            CALL combobox.addItem(i, rec.Locales[i].LocaleCode);
+        END FOR
     END IF
-    CALL util.JSON.parse(result, rec);
-    CALL combobox.clear();
-    DISPLAY combobox.getItemCount();
-    DISPLAY 'ICI'||util.JSON.stringify(rec.Locales);
-    FOR i = 1 TO rec.Locales.getLength()
-        DISPLAY 'add '||rec.Locales[i].LocaleCode||'...'||rec.Locales[i].LocaleContent;
-        CALL combobox.addItem(i, rec.Locales[i].LocaleCode);
-    END FOR
-    RETURN rec.*;
+        RETURN rec.*;
 END FUNCTION
