@@ -157,7 +157,7 @@
             <Group gridHeight="40" gridWidth="73" name="group10" posX="2" posY="1" text="SCSS editor">
               <Grid gridHeight="28" gridWidth="68" name="grid10" posX="2" posY="1">
                 <WebComponent componentType="codeMirror" fieldId="36" gridHeight="26" gridWidth="65" name="override_scss" posX="1" posY="1" tabIndex="-1" widget="WebComponent">
-                  <DynamicProperty name="webcomponent.codeMirror.language" value="sass"/>
+                  <DynamicProperty name="webcomponent.codeMirror.language" value="SCSS"/>
                 </WebComponent>
               </Grid>
             </Group>
@@ -167,7 +167,7 @@
               <ComboBox fieldId="33" gridHeight="1" gridWidth="22" initializer="initLocalesCombobox" items="" name="LocaleCode" notNull="true" posX="4" posY="1" required="false" tabIndex="30" title="combobox1" widget="ComboBox"/>
               <Button gridHeight="1" gridWidth="16" name="LocalesAdd" posX="28" posY="1" tabIndex="31" text="Add a locales file"/>
               <WebComponent componentType="codeMirror" fieldId="34" gridHeight="21" gridWidth="40" lstrWebComponent="false" name="localeCM" posX="4" posY="3" tabIndex="32" widget="WebComponent">
-                <DynamicProperty name="webcomponent.codeMirror.language" value="javascript"/>
+                <DynamicProperty name="webcomponent.codeMirror.language" value="JS"/>
               </WebComponent>
             </Grid>
           </Page>
@@ -185,6 +185,6 @@
     </HBox>
   </Form>
   <DiagramLayout>
-    <![CDATA[AAAAAgAAAEwAewA0ADgAYQBmADIAZgBkADgALQBjAGYAOQA0AC0ANAA4AGIAZAAtADgAYwBmADEALQA5AGIAMgAzADgAYQBlADQAYgA3ADMAMgB9wHwAAAAAAABAS4AAAAAAAD+wIMSbpeNXAQAAAEwAewA2ADkANQBjADIAYgA3ADQALQBlADkAYwBiAC0ANABlADMANAAtADgANQBlADAALQAzAGUANgA2AGUAYQBiADgAYgAxADYAOQB9QEkAAAAAAABASQAAAAAAAD+xJul41P33AQAAAEwAewBhAGMAMgBlAGIAZQA1ADkALQBlADMANgA5AC0ANAAxADYAMwAtAGEANgBiADIALQBkADUANAA1AGUAOAA2AGQAYQA3ADUAOAB9wG+gAAAAAABAaUAAAAAAAD+rpeNT987fAQAAAEwAewBlAGIAYgA2ADYAZAAyADEALQBjAGYANQA0AC0ANAAwAGEANgAtAGIAOQBiADMALQAyADEAMAA3ADcANAAzAGMAMgAzAGQANgB9wIfIAAAAAAC/8AAAAAAAAD+tLxqfvnbPAQAAAEwAewBiAGQAZQAxADAAMQA2ADgALQAzADUAMwA1AC0ANAAxADkANgAtAGIAOQA5AGEALQA2ADAAYQAxAGEAZABhAGQAZQAxADkANwB9wHBQAAAAAABASgAAAAAAAD+srAgxJul/AQ==]]>
+    <![CDATA[AAAAAgAAAEwAewBlAGIAYgA2ADYAZAAyADEALQBjAGYANQA0AC0ANAAwAGEANgAtAGIAOQBiADMALQAyADEAMAA3ADcANAAzAGMAMgAzAGQANgB9wIfIAAAAAAC/8AAAAAAAAD+tLxqfvnbPAQAAAEwAewBiAGQAZQAxADAAMQA2ADgALQAzADUAMwA1AC0ANAAxADkANgAtAGIAOQA5AGEALQA2ADAAYQAxAGEAZABhAGQAZQAxADkANwB9wHBQAAAAAABASgAAAAAAAD+srAgxJul/AQAAAEwAewA0ADgAYQBmADIAZgBkADgALQBjAGYAOQA0AC0ANAA4AGIAZAAtADgAYwBmADEALQA5AGIAMgAzADgAYQBlADQAYgA3ADMAMgB9wHwAAAAAAABAS4AAAAAAAD+wIMSbpeNXAQAAAEwAewBhAGMAMgBlAGIAZQA1ADkALQBlADMANgA5AC0ANAAxADYAMwAtAGEANgBiADIALQBkADUANAA1AGUAOAA2AGQAYQA3ADUAOAB9wG+gAAAAAABAaUAAAAAAAD+rpeNT987fAQAAAEwAewA2ADkANQBjADIAYgA3ADQALQBlADkAYwBiAC0ANABlADMANAAtADgANQBlADAALQAzAGUANgA2AGUAYQBiADgAYgAxADYAOQB9QEkAAAAAAABASQAAAAAAAD+xJul41P33AQ==]]>
   </DiagramLayout>
 </ManagedForm>

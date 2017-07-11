@@ -46,7 +46,39 @@ FUNCTION initLocalesCombobox(cb ui.ComboBox)
 
     CALL cb.addItem(1, 'en-US')
     LET Locales[1].LocaleCode = 'en-US';
-    LET Locales[1].LocaleContent = "{}"
+    LET Locales[1].LocaleContent = '{\n
+  "gwc": {\n
+    "app": {\n
+      "ending": {\n
+        "title": "The application isn\'t running anymore"\n
+      }\n
+    },\n
+    "welcome": {\n
+      "history": "Recent applications",\n
+      "bookmark": "Favorites"\n
+    }\n
+  },\n
+  "mycusto": {\n
+    "window": {\n
+      "currentTitle": "Currently opened window title"\n
+    },\n
+    "session": {\n
+      "redirectionText": "Redirection to www.google.com in 10 seconds. Click here to go now."\n
+    }\n
+  }\n
+}\n';
+    CALL cb.addItem(2, 'fr-FR')
+    LET Locales[2].LocaleCode = 'fr-FR'
+    LET Locales[2].LocaleContent = '{\n
+  "mycusto": {\n
+        "window": {\n
+          "currentTitle": "Titre de la fenêtre courante"\n
+        },\n
+        "session": {\n
+          "redirectionText": "Redirection vers www.google.com dans 10 secondes. Cliquez ici pour y aller directement."\n
+        }\n
+   }\n
+}'
     RETURN Locales;
 END FUNCTION
 

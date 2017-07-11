@@ -5,6 +5,7 @@ IMPORT FGL customization
 IMPORT FGL locales
 IMPORT FGL resources
 IMPORT FGL validator
+IMPORT FGL server
 IMPORT XML
 IMPORT com
 IMPORT os
@@ -23,7 +24,8 @@ MAIN
 
     OPEN FORM Theme FROM "Theme"
     DISPLAY FORM Theme
-    LET URL = 'http://localhost:3000';
+    LET URL = getServerURL();
+    DISPLAY URL;
     CALL mainInit() RETURNING rec.*
     CALL initiateRequest(URL, rec.*) RETURNING rec.*;
     LET LocaleCode = 1;
@@ -91,7 +93,7 @@ MAIN
             CALL downloadCustomization(URL, rec.*);
 
         ON ACTION preview ATTRIBUTES(TEXT="Preview")
-            CALL ui.Interface.frontCall("standard", "launchURL", [ "http://localhost:6394/ua/r/gwc-demo?gbc=" || gbcName ], [])
+            CALL ui.Interface.frontCall("standard", "launchURL", [ getGasURL()||"/ua/r/gwc-demo?gbc=" || gbcName ], [])
 
         ON ACTION LocalesAdd
             CALL addLocale(rec.*)

@@ -21,6 +21,7 @@ SRC = 	src/customization.4gl \
 	src/resources.4gl \
 	src/REST.4gl \
 	src/validator.4gl \
+	src/server.4gl \
 	src/main.4gl
 
 FORM = src/Theme.4fd

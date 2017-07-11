@@ -77,6 +77,7 @@
         <File filePath="../src/main.4gl"/>
         <File filePath="../src/resources.4gl"/>
         <File filePath="../src/REST.4gl"/>
+        <File filePath="../src/server.4gl"/>
         <File filePath="../src/Theme.4fd"/>
         <File compilerOptions="--java-option=-Xss2m" filePath="../src/validator.4gl"/>
       </VirtualFolder>

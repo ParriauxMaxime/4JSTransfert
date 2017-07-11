@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <WorkspaceDatabase fileContentsEncoding="UTF-8" version="2.0">
-<File m="customization" n="../src/customization.4gl" ts="20170707112313765">
+<File m="customization" n="../src/customization.4gl" ts="20170710095727559">
 <Ref t="../src/global.4gl"/>
 <Fct c="10" el="77" l="41" n="importCustomization(URL STRING,rec unknown,combobox ui.ComboBox)" t="F">
 <Call c="14" l="61" n="POSTZipRequest" p="../src/REST.4gl" t="F"/>
@@ -10,8 +10,8 @@
 <Call c="10" l="10" n="POSTTextRequest" p="../src/REST.4gl" t="F"/>
 </Fct>
 </File>
-<File m="global" n="../src/global.4gl" ts="20170705172942029"/>
-<File m="initialValue" n="../src/initialValue.4gl" ts="20170705172233087">
+<File m="global" n="../src/global.4gl" ts="20170710095727597"/>
+<File m="initialValue" n="../src/initialValue.4gl" ts="20170710095727601">
 <Ref t="../src/global.4gl"/>
 <Fct c="10" el="62" l="53" n="mainInit()" t="F">
 <Call c="10" l="58" n="setDefaultValueOverview" t="F"/>
@@ -22,11 +22,11 @@
 <Fct c="10" el="42" l="34" n="setDefaultEditor()" t="F"/>
 <Fct c="10" el="32" l="3" n="setDefaultValueOverview()" t="F"/>
 </File>
-<File m="locales" n="../src/locales.4gl" ts="20170629163920143">
+<File m="locales" n="../src/locales.4gl" ts="20170710095727548">
 <Ref t="../src/global.4gl"/>
 <Fct c="10" el="14" l="3" n="addLocale(rec unknown)" t="F"/>
 </File>
-<File m="main" n="../src/main.4gl" ts="20170707112313777">
+<File m="main" n="../src/main.4gl" ts="20170711094907831">
 <Ref t="../src/global.4gl"/>
 <Dep t="../src/initialValue.4gl"/>
 <Dep t="../src/REST.4gl"/>
@@ -34,22 +34,23 @@
 <Dep t="../src/locales.4gl"/>
 <Dep t="../src/resources.4gl"/>
 <Dep t="../src/validator.4gl"/>
-<Fct c="1" el="103" l="15" n="main()" t="F">
-<Call c="10" l="27" n="mainInit" p="../src/initialValue.4gl" t="F"/>
-<Call c="10" l="28" n="initiateRequest" p="../src/REST.4gl" t="F"/>
-<Call c="22" l="40" n="validateDataType" p="../src/validator.4gl" t="F"/>
-<Call c="18" l="78" n="importFiles" p="../src/resources.4gl" t="F"/>
-<Call c="18" l="81" n="importCustomization" p="../src/customization.4gl" t="F"/>
-<Call c="17" l="84" n="buildCustomization" p="../src/customization.4gl" t="F"/>
-<Call c="18" l="91" n="downloadCustomization" p="../src/customization.4gl" t="F"/>
-<Call c="18" l="97" n="addLocale" p="../src/locales.4gl" t="F"/>
+<Fct c="1" el="105" l="16" n="main()" t="F">
+<Call c="15" l="27" n="getServerURL" t="F"/>
+<Call c="10" l="29" n="mainInit" p="../src/initialValue.4gl" t="F"/>
+<Call c="10" l="30" n="initiateRequest" p="../src/REST.4gl" t="F"/>
+<Call c="22" l="42" n="validateDataType" p="../src/validator.4gl" t="F"/>
+<Call c="18" l="80" n="importFiles" p="../src/resources.4gl" t="F"/>
+<Call c="18" l="83" n="importCustomization" p="../src/customization.4gl" t="F"/>
+<Call c="17" l="86" n="buildCustomization" p="../src/customization.4gl" t="F"/>
+<Call c="18" l="93" n="downloadCustomization" p="../src/customization.4gl" t="F"/>
+<Call c="18" l="99" n="addLocale" p="../src/locales.4gl" t="F"/>
 </Fct>
 </File>
-<File m="resources" n="../src/resources.4gl" ts="20170707112312840">
+<File m="resources" n="../src/resources.4gl" ts="20170710095727565">
 <Ref t="../src/global.4gl"/>
 <Fct c="10" el="32" l="6" n="importFiles(rec unknown)" t="F"/>
 </File>
-<File m="REST" n="../src/REST.4gl" ts="20170704150000153">
+<File m="REST" n="../src/REST.4gl" ts="20170710095727580">
 <Ref t="../src/global.4gl"/>
 <Fct c="10" el="110" l="84" n="initiateRequest(URL STRING,rec unknown)" t="F">
 <Call c="10" l="88" n="POSTTokenRequest" t="F"/>
@@ -61,7 +62,7 @@
 <Fct c="10" el="49" l="29" n="POSTValidationRequest(url STRING,rec unknown)" t="F"/>
 <Fct c="10" el="27" l="6" n="POSTTextRequest(url STRING,rec unknown)" t="F"/>
 </File>
-<File m="validator" n="../src/validator.4gl" ts="20170705095601280">
+<File m="validator" n="../src/validator.4gl" ts="20170710095727569">
 <Ref t="../src/global.4gl"/>
 <Dep t="../src/REST.4gl"/>
 <Fct c="10" el="24" l="7" n="validateDataType(URL STRING,rec unknown)" t="F">

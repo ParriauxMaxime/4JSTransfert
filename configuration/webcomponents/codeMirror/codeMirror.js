@@ -7,24 +7,26 @@ var _focus = false;
 function cm(gICAPI) {
 	
 	this.editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
-	  lineNumbers: true,
-	  theme: "eclipse",
-	  mode: "htmlmixed",
-	  matchBrackets: true,
-	  autoCloseBrackets: true,
-	  autoCloseTags: true,
-	  hint: {
-        javascript: true,
-	    xml: true,
-	    html: true,
-	    css:true
-	  },
-	  showCursorWhenSelecting: true,
-	  extraKeys: {
-	    "Cmd-S":function(cm) {
-	    },
-		"Ctrl-Space": "autocomplete"
-	  }
+		lineNumbers: true,
+		theme: "eclipse",
+		mode: "htmlmixed",
+		matchBrackets: true,
+		autoCloseBrackets: true,
+		autoCloseTags: true,
+		hint: {
+			javascript: true,
+			xml: true,
+			html: true,
+			css:true,
+			sass:true,
+			json: true
+		},
+		showCursorWhenSelecting: true,
+		extraKeys: {
+			"Cmd-S":function(cm) {
+			},
+			"Ctrl-Space": "autocomplete"
+		}
 	});
 	const editor = this.editor;
 	
@@ -41,8 +43,6 @@ function cm(gICAPI) {
 					return 'xml';
 				case 'SASS':
 					return 'sass';
-				case '4GL':
-					return '4gl'
 			}
 		};
 		editor.setOption('mode', mode())
@@ -67,14 +67,14 @@ function cm(gICAPI) {
 	}
 	
 	this.stateChanged = function(strParams) {
-			var params = JSON.parse(strParams);
-			var active = params.active === 1 ? true : params.active === "1" ? true : false;
-			if (!active) {
+		var params = JSON.parse(strParams);
+		var active = params.active === 1 ? true : params.active === "1" ? true : false;
+		if (!active) {
 			
-			}
-			else {
+		}
+		else {
 			
-			}
+		}
 	};
 	
 	this.setOption = function(option, value) {
@@ -134,11 +134,31 @@ var onICHostReady = function(version) {
 			cmEditor.removeSelector();
 			p = JSON.parse(p);
 			if (p.language) {
-				if (p.language === 'HTML') {
-					cmEditor.setOption('mode', 'htmlmixed');
-				}
-				else if (p.language === 'CSS') {
-					cmEditor.setOption('mode', 'css');
+				switch(p.language) {
+					case 'HTML': {
+						cmEditor.setOption('mode', 'htmlmixed');
+						break;
+					}
+					case 'CSS': {
+						cmEditor.setOption('mode', 'css');
+						break;
+					}
+					case 'SASS': {
+						cmEditor.setOption('mode', 'sass');
+						break;
+					}
+					case 'JS': {
+						cmEditor.setOption('mode', 'javascript');
+						break;
+					}
+					case 'SCSS': {
+						cmEditor.setOption('mode', 'text/x-scss');
+						break;
+					}
+					default: {
+						cmEditor.setOption('mode', 'javascript');
+						break;
+					}
 				}
 			}
 		})
